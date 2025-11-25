@@ -128,6 +128,7 @@ daytona=["daytona"]
 oxylabs = ["oxylabs"]
 trafilatura = ["trafilatura"]
 neo4j = ["neo4j"]
+falkordb = ["FalkorDB"]
 
 # Dependencies for Storage
 sql = ["sqlalchemy"]
@@ -251,6 +252,7 @@ tools = [
   "agno[reportlab]",
   "agno[trafilatura]",
   "agno[neo4j]",
+  "agno[falkordb]",
 ]
 
 # All storage
@@ -392,6 +394,7 @@ module = [
   "e2b_code_interpreter.*",
   "eth_account.*",
   "exa_py.*",
+  "falkordb.*",
   "fastapi.*",
   "fastembed.*",
   "fastmcp.*",
