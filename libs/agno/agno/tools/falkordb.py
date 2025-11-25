@@ -141,8 +141,8 @@ class FalkorDBTools(Toolkit):
                     data.append(row_dict)
                 return data
             else:
-                # If no header, return raw result_set
-                return [list(record) for record in result.result_set]
+                # If no header, return result_set as-is (already in list format)
+                return list(result.result_set)
         except Exception as e:
             logger.error(f"Error running Cypher query: {e}")
             return []
